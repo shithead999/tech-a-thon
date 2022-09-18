@@ -1,0 +1,172 @@
+
+body{
+    background-color: #0D0D0D;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background: black;
+    height: 85px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+
+}
+
+nav .extra ul li {
+    align-items: center;
+    height: 85px;
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    font-size: 20px;
+    color: #b4f819;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: 3s;
+    padding: 0 12px;
+}
+nav .extra ul li a{
+    text-decoration: none;
+    color: #b4f819;
+}
+nav .extra ul :hover{
+    color: #fff;
+}
+nav ul li img {
+    height: 78px;
+    align-items: left;
+    padding: 0;
+}
+nav ul li img .name{
+    margin-top: 60px;
+}
+
+.main{
+    position: relative;
+    display: flex;
+    /* border: solid 1px #fff; */
+    display: flex;
+    flex-wrap: wrap;
+    /* overflow: hidden; */
+}
+
+/* #menuBar{
+    width:5%;
+    height: 90%;
+    border: solid 1px #fff;
+    background: black;
+    color: #fff;
+} */
+
+.menu{
+    /* border: 1px solid #fff; */
+    color: #fff;
+    width: 5%;
+    background: black;
+    height: 560PX;
+
+}
+
+.main .menu ul li img{
+    margin-top: 20px;
+    width: 30px;
+}
+
+.main .menu ul li:hover{
+    cursor: pointer;
+    background: rgb(105,105,105,.1);
+    transition: transform 0.5s;
+}
+
+.main .menu li{
+    padding: 17px;
+}
+
+.work{
+    display: flex;
+    overflow: hidden;
+}
+
+.compiler{
+    height: 550px;
+    width: 700px;
+    padding: px;
+    /* border: 1px solid #fff; */
+}
+
+.compiler .title{
+    position: relative;
+    flex-wrap: wrap;
+    height: 60px;
+    width: 619px;
+    border: 1px solid #fff;
+    padding: 12px ;
+    margin: 0;
+    background-color: #b4f819;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+
+.output{
+    height: 550px;
+    width: 600px;
+    padding: 0px;
+    /* border: 1px solid #fff; */
+}
+
+.output .run{
+    position: relative;
+    flex-wrap: wrap;
+    height: 60px;
+    width: 530px;
+    border: 1px solid #fff;
+    padding: 12px ;
+    margin: 0;
+    background-color: #b4f819;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+textarea{
+    margin-left: 20px;
+    padding: 0;
+    border: 3px solid #ccc;
+    /* border-radius: 5px; */
+    background-color:  #0D0D0D;
+    color: white;
+}
+input[type="submit"] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 20% ;
+
+}
+input[type="submit"]:hover{
+    background-color: #0D0D0D;
+}
+input[type="reset"] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 20%;
+}
+input[type="reset"]:hover{
+    background-color: #0D0D0D;
+}

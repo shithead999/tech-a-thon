@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Compiler</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<nav>
+    <ul>
+        <li class="brand"> <a href="/Logo.html" target="blank"><img src="/WhatsApp_Image_2022-09-17_at_12.31.18-removebg-preview.png" alt=""></a><a href="/test-main/code_league/main.html"><img src="/name.png" alt="" class="name">  </li>
+    </ul>
+    <div class="extra">
+        <ul>
+          <li><a href="/about.html"> ABOUT US </a></li>
+          <li><a href="/faqq.html" target="blank"> FAQ </a></li>
+        </ul>
+    </div>
+</nav>
+<body>
+    <div class="main">
+      <div class="menu">
+           <ul class="menuList">
+            <li class="menuItem"><img src="/Icon/c-.png" alt=""></li>
+            <li class="menuItem" onclick="setCpp()"> <img src="/Icon/letter-c.png" alt=""> </li>
+            <!-- <li class="menuItem"><img src="/Icon/c-sharp.png" alt=""></li> -->
+            <li class="menuItem"><img src="/Icon/java.png" alt=""> </li> 
+            <li class="menuItem" onclick="setPython()"><img src="/Icon/python.png" alt=""> </li>
+           </ul>
+      </div>
+    <div>
+    <div class="work">
+    <div class="compiler">
+        <div class="title">
+            <div class="btn" style="margin-top: 9px;">
+                <input type="submit" name="RUN" onclick="executeCode()">
+            </div>
+        </div>
+        
+        <textarea name="code" id="code-area" cols="85" rows="25" placeholder="// Enter your code"></textarea><br><br>
+    </div>
+    <div class="output">
+        <div class="run">
+            <div class="btn" style="margin-top: 9px;">
+              <input type="reset" name="RESET" id="Reset" onclick="clear">
+            </div>
+        </div>
+        <textarea name="output" id="output-area" cols="73" rows="25" ></textarea><br><br>
+    </div>
+    </div>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

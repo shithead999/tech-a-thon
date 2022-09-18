@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto+Condensed&display=swap');
+
+body{
+    background-color: #0D0D0D;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background: black;
+    height: 85px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+
+}
+
+nav .extra ul li {
+    align-items: center;
+    height: 85px;
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    font-size: 20px;
+    color: #b4f819;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: 3s;
+    padding: 0 12px;
+}
+nav .extra ul li a{
+    text-decoration: none;
+    color: #b4f819;
+}
+nav .extra ul :hover{
+    color: #fff;
+}
+nav ul li img {
+    height: 78px;
+    align-items: left;
+    padding: 0;
+}
+nav ul li img .name{
+    margin-top: 60px;
+}
+
+.main{
+    position: relative;
+    display: flex;
+    /* border: solid 1px #fff; */
+    display: flex;
+    flex-wrap: wrap;
+    /* overflow: hidden; */
+}
+
+/* #menuBar{
+    width:5%;
+    height: 90%;
+    border: solid 1px #fff;
+    background: black;
+    color: #fff;
+} */
+
+/* .menu{
+    /* border: 1px solid #fff; */
+    /* color: #fff;
+    width: 5%;
+    background: black;
+    height: 525PX;
+
+} */
+
+.main .menu ul li img{
+    margin-top: 20px;
+    width: 30px;
+}
+
+.main .menu ul li img:hover{
+    cursor: pointer;
+}
+
+.main .menu li{
+    padding: 17px;
+} */
+/* .body1{
+    background-color: #fff;
+    width: 722px;
+    height: 640px;
+}
+.body2{
+    background-color: antiquewhite;
+    width: 700px;
+    height: 600px;
+} */
+.faq{
+    display: flex;
+    /* background-color: white; */
+    text-align: right;
+    margin: 0;
+    align-items: center;
+}
+#faqq{
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 80px;
+}
+.text{
+    font-style: italic;
+    
+}
+p{
+    color: rgb(235, 220, 220);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p li{
+    color: white;
+}
+.naam{
+    border: 1px ;
+    padding: 50px;
+}

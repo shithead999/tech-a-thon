@@ -1,0 +1,65 @@
+body{
+    background-color: #0D0D0D;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background: black;
+    height: 85px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+
+}
+
+nav .extra ul li {
+    align-items: center;
+    height: 85px;
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    font-size: 20px;
+    color: #b4f819;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: 3s;
+    padding: 0 12px;
+}
+nav .extra ul li a{
+    text-decoration: none;
+    color: #b4f819;
+}
+nav .extra ul :hover{
+    color: #fff;
+}
+nav ul li img {
+    height: 78px;
+    align-items: left;
+    padding: 0;
+}
+nav ul li img .name{
+    margin-top: 60px;
+}
+
+.main{
+    position: relative;
+    display: flex;
+    /* border: solid 1px #fff; */
+    display: flex;
+    flex-wrap: wrap;
+    /* overflow: hidden; */
+}
+
+body{
+    background-image: url(/aboutuspng.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
