@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>Online IDE</title>
+</head>
+<body>
+<center>
+<h1>Online IDE</h1>
+<h3>Code</h3>
+<textarea rows="13" cols="100" id="code" name="code" ></textarea> 
+<br/>
+<h3>Input</h3>
+<textarea rows="10" cols="100" id="input" name="input" ></textarea> 
+<br/>
+Language :
+<select name="lang">
+	<option value="cpp">C++</option>
+	<option value="Java">Java</option>  
+	<option value="py">Python</option> 
+</select>
+
+<button id="submit" onclick="postReq()">Get Output</button><br /><br />
+<div id="output">
+	Run code to see output here....
+</div>
+</center>
+<script type="text/javascript">
+async function postReq() {
+	const obj = {
+		language: document.getElementsByName("lang")[0].value,
+		code: document.getElementById("code").value,
+		input: document.getElementById("input").value,
+	}
+	const response = await fetch("/run", {
+		method: 'POST',
+		mode: 'cors',
+		cache: 'no-cache',
+		credentials: 'same-origin',
+		headers: {
+			'Content-Type': 'application/json'
+		},
+		referrerPolicy: 'no-referrer',
+		body: JSON.stringify(obj) 
+	}).then((response) => response.json())
+    .then((ans) => {
+    	console.log(ans)
+       // if (ans.output){
+       // 	document.getElementById("output").innerHTML = ans.output
+       // }
+       // else{
+       // 	document.getElementById("output").innerHTML = "Can't Execute Error !! "       	
+       // }
+    });
+}
+</script>
+</body>
+</html>
